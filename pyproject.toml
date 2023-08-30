@@ -14,8 +14,8 @@ classifiers = [
 ]
 dependencies = [
     "accelerate", "sentencepiece", "tokenizers>=0.12.1",
-    "torch>=2.0.0", "torchvision", 
-    "transformers>=4.31.0", 
+    "torchvision",
+    "transformers>=4.31.0",
     "lm_eval", "texttable",
     "toml", "attributedict",
     "protobuf"
