@@ -71,11 +71,14 @@ def stream_output(output_stream):
         print("=" * 50)
         print("Speed of Inference")
         print("-" * 50)
-        # print(f"Context Stage    : {context_time/context_tokens * 1000:.2f} ms/token")
+        print(f"Context Stage    : {context_time/context_tokens * 1000:.2f} ms/token")
         print(
             f"Generation Stage : {np.average(generation_time_list) * 1000:.2f} ms/token"
         )
-        # print(f"Average Speed    : {average_speed * 1000:.2f} ms/token")
+        print(f"Average Speed    : {average_speed * 1000:.2f} ms/token")
+        print(f"Context Stage    : {context_time/context_tokens * 1000:.2f} ms/token")
+        print(f"Generation Stage : {np.average(generation_time_list) * 1000:.2f} ms/token")
+        print(f"Average Speed    : {average_speed * 1000:.2f} ms/token")
         print("=" * 50)
         # print("token num:", total_tokens)
         # print("Model total Time = ", (context_time + np.sum(generation_time_list))*1000, "ms" )
